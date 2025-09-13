@@ -1,0 +1,146 @@
+## 📌 License Name: The Nexora Attribution Non-Commercial License (NANCL)
+
+---
+
+### 1. Copyright Ownership
+
+All source code, assets, documentation, and associated intellectual property (hereinafter collectively referred to as the "Software") within this repository are © 2023–2025 **Autumn Brooks** and **Nexora Data Limited**, collectively referred to as the "Copyright Holders."
+
+All rights, titles, and interest in and to the Software, including any intellectual property rights therein, remain the sole and exclusive property of the Copyright Holders.
+
+---
+
+### 2. Grant of License
+
+Subject to strict compliance with the terms of this License, the Copyright Holders hereby grant you (the "Licensee") a **non-exclusive, non-transferable, non-commercial**, worldwide license to:
+
+* Use and host the Software on internet-facing platforms or servers.
+* Modify and adapt the Software solely for personal or internal non-commercial purposes.
+* Share modifications under the same license and restrictions, with proper attribution.
+
+This license does **not** grant any rights to sublicense, resell, relicense, or distribute the Software for any monetary or material gain.
+
+---
+
+### 3. Non-Commercial Use Only
+
+Under no circumstances may the Software, or any derivative works thereof, be used to generate income, revenue, donations, financial support, sponsorships, or any form of commercial benefit.
+
+Prohibited activities include, but are not limited to:
+
+* Selling access to the Software or its services.
+* Accepting donations in exchange for access, services, or features.
+* Integrating the Software into paid platforms or products.
+* Offering "priority access" or "premium" versions based on financial contributions.
+* Displaying ads, selling data, or generating any advertising-based income.
+
+**Any form of monetization is strictly prohibited.**
+
+---
+
+### 4. Prohibition on Resale and Redistribution
+
+The Software, in part or in whole, may **not be sold**, auctioned, bartered, sublicensed, or otherwise transferred in exchange for value.
+
+The Licensee is strictly prohibited from:
+
+* Listing the Software or derivative works on any marketplace or commercial platform.
+* Selling code snippets, plugins, or portions of the Software.
+* Offering installation services for a fee based on this Software.
+
+---
+
+### 5. Attribution Requirements
+
+The Licensee must provide **clear, visible, and permanent attribution** to the original creators **at all times** when the Software is hosted, distributed, or displayed.
+
+The following credit must be prominently displayed in any public-facing interface or documentation (e.g., website footer, application UI, or API response):
+
+```
+Powered by FiveM Database & Nexora Data
+```
+
+* Attribution must remain unmodified, clearly visible, and legible.
+* Attribution may not be hidden behind authentication or limited to internal users only.
+* Any form of obfuscation, removal, or minimization of attribution is a breach of this License.
+
+---
+
+### 6. Copyright Enforcement
+
+All code, scripts, assets, and logic contained within this repository are subject to **strict copyright laws** under applicable international conventions (e.g., the Berne Convention).
+
+Unauthorized use, reproduction, or distribution is considered a direct violation and may result in legal action, including but not limited to:
+
+* Takedown notices (DMCA).
+* Issuance of cease and desist letters.
+* Formal litigation for damages and injunctive relief.
+
+---
+
+### 7. Responsibility for External Dependencies
+
+All blacklists, databases, and data storage mechanisms referenced by or used within the Software **must be independently obtained, configured, and maintained** by the Licensee.
+
+The Copyright Holders:
+
+* Do **not** provide access to pre-built blacklists or datasets.
+* Are **not** responsible for data loss, inconsistency, or liability resulting from the Licensee’s use or misconfiguration of such data.
+* Will **not** provide support, updates, or maintenance of external dependencies or integrations.
+
+---
+
+### 8. Prohibited Actions
+
+You may **not**, under any circumstance:
+
+* Misrepresent authorship or origin of the Software.
+* Reverse engineer, decompile, or attempt to extract original source code where distributed in compiled form.
+* Use the Software in connection with illegal or malicious activity.
+* Use the Software in violation of any applicable laws or regulations.
+* Modify this license or re-license the Software under alternative terms.
+
+---
+
+### 9. Termination
+
+This license is **automatically terminated** if the Licensee fails to comply with **any** of its terms.
+
+Upon termination:
+
+* All rights granted herein immediately cease.
+* Licensee must destroy all copies of the Software and derivatives in their possession.
+* Public services or websites using the Software must be taken offline or modified to remove all usage.
+
+Termination does **not** relieve the Licensee of liability for violations that occurred prior to termination.
+
+---
+
+### 10. No Warranty / Disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+### 11. Governing Law and Jurisdiction
+
+This License shall be governed by and construed in accordance with the laws of:
+
+* The United Kingdom (in respect to Nexora Data Limited)
+* The applicable local jurisdiction of Autumn Brooks, where relevant
+
+All disputes arising out of or in connection with this License shall be submitted to the exclusive jurisdiction of the courts located in the United Kingdom.
+
+---
+
+### 12. Severability
+
+If any provision of this License is found to be unlawful, void, or for any reason unenforceable, then that provision shall be deemed severable and shall not affect the validity or enforceability of any remaining provisions.
+
+---
+
+### 13. Entire Agreement
+
+This License constitutes the entire agreement between the Licensee and the Copyright Holders relating to the use of the Software and supersedes all prior or contemporaneous understandings regarding such subject matter.

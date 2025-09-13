@@ -1,0 +1,229 @@
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #root {
+    max-width: 1280px;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #root {
+    padding: 2rem;
+  }
+}
+
+.logo {
+  height: 4em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+  }
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    padding: 2rem;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Enhanced mobile-specific styles */
+@media (max-width: 767px) {
+  .mobile-container {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0 0.75rem;
+  }
+  
+  .mobile-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .mobile-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .mobile-visible {
+    display: block;
+  }
+  
+  .mobile-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .mobile-p-2 {
+    padding: 0.5rem;
+  }
+  
+  /* Enhanced mobile touch targets */
+  .mobile-touch-target {
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Fix for transparent mobile menus */
+  .mobile-menu-opaque {
+    background-color: #080818 !important; 
+    opacity: 1 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  
+  /* Mobile nav menu - ensure deep black background */
+  .mobile-nav-menu {
+    background-color: #080818 !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Better mobile spacing */
+  .mobile-spacing {
+    padding: 1rem 0.75rem;
+  }
+  
+  /* Mobile-optimized text */
+  .mobile-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+  }
+  
+  .mobile-subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .mobile-body {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+/* Enhanced mobile navigation drawer styles */
+@media (max-width: 767px) {
+  [data-sidebar="sidebar"][data-mobile="true"],
+  .mobile-nav-menu,
+  .sheet-content[data-state="open"],
+  .sidebar-sheet-content,
+  [data-radix-popper-content-wrapper],
+  [role="dialog"] {
+    background-color: #080818 !important;
+    border-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Fix for sheet and drawer components on mobile */
+  .fixed.inset-x-0.bottom-0.z-50,
+  .sheet-content,
+  .drawer-content {
+    background-color: #080818 !important;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Apply opacity fix to all sidebar-related elements */
+  [role="dialog"],
+  .sidebar-panel,
+  [data-radix-dialog-content],
+  [data-state="open"] > div {
+    background-color: #080818 !important;
+    opacity: 1 !important;
+  }
+  
+  /* Mobile keyboard handling */
+  .mobile-input-focus {
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+  }
+}
+
+/* Always ensure menu dialogs are opaque regardless of state */
+[role="dialog"],
+[data-radix-dialog-content],
+[data-state="open"] {
+  background-color: #080818 !important;
+}
+
+/* Better mobile scrolling */
+@media (max-width: 767px) {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  * {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Mobile grid improvements */
+@media (max-width: 640px) {
+  .mobile-grid-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .tablet-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
