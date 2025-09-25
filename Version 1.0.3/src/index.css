@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import chart styles */
+@import './styles/charts.css';
+
+@layer base {
+  :root {
+    --background: 210 40% 2%;
+    --foreground: 210 40% 98%;
+    --card: 210 40% 4%;
+    --card-foreground: 210 40% 98%;
+    --popover: 210 40% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 210 40% 9%;
+    --secondary: 210 40% 10%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 210 40% 10%;
+    --muted-foreground: 210 40% 65%;
+    --accent: 210 40% 10%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 40% 12%;
+    --input: 210 40% 12%;
+    --ring: 210 40% 93%;
+    --chart-1: 210 40% 80%;
+    --chart-2: 210 40% 65%;
+    --chart-3: 210 40% 50%;
+    --chart-4: 210 40% 35%;
+    --chart-5: 210 40% 20%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-gradient-to-r from-[rgba(25,31,54,0.85)] via-[rgba(15,22,43,0.8)] to-[rgba(25,31,54,0.85)] backdrop-blur-xl border border-white/5;
+  }
+  
+  .glass-card {
+    @apply bg-gradient-to-br from-white/5 via-white/[0.02] to-transparent backdrop-blur-md border border-white/10;
+  }
+  
+  .glass-neo {
+    @apply bg-gradient-to-br from-white/10 via-white/5 to-white/[0.02] backdrop-blur-lg border border-white/20;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-alt {
+    @apply bg-gradient-to-r from-pink-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent;
+  }
+  
+  .minimal-hover {
+    @apply transition-colors duration-200 ease-out;
+  }
+  
+  .footer-gradient {
+    @apply bg-gradient-to-b from-[#0A0F1C] via-[#0F1419] to-[#080818];
+  }
+  
+  .font-display {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  
+  .animate-pulse-subtle {
+    animation: pulseSubtle 2s ease-in-out infinite;
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 2s linear infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
+}

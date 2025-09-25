@@ -1,0 +1,145 @@
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #root {
+    max-width: 1280px;
+    padding: 2rem;
+  }
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 2em;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .mobile-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .mobile-scroll {
+    overflow-x: auto;
+  }
+  
+  .mobile-stack {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .mobile-visible {
+    display: block;
+  }
+  
+  .mobile-text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .mobile-p-2 {
+    padding: 0.5rem;
+  }
+  
+  /* Fix for transparent mobile menus */
+  .mobile-menu-opaque {
+    background-color: #080818 !important; 
+    opacity: 1 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  
+  /* Mobile nav menu - ensure deep black background */
+  .mobile-nav-menu {
+    background-color: #080818 !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Mobile navigation drawer styles */
+@media (max-width: 767px) {
+  [data-sidebar="sidebar"][data-mobile="true"],
+  .mobile-nav-menu,
+  .sheet-content[data-state="open"],
+  .sidebar-sheet-content,
+  [data-radix-popper-content-wrapper],
+  [role="dialog"] {
+    background-color: #080818 !important;
+    border-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Fix for sheet and drawer components on mobile */
+  .fixed.inset-x-0.bottom-0.z-50,
+  .sheet-content,
+  .drawer-content {
+    background-color: #080818 !important;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Apply opacity fix to all sidebar-related elements */
+  [role="dialog"],
+  .sidebar-panel,
+  [data-radix-dialog-content],
+  [data-state="open"] > div {
+    background-color: #080818 !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Always ensure menu dialogs are opaque regardless of state */
+[role="dialog"],
+[data-radix-dialog-content],
+[data-state="open"] {
+  background-color: #080818 !important;
+}
