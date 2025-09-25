@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Dynamic meta tags will be injected by Helmet -->
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://jjrfxdnjjvmjgfftrndd.supabase.co" />
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/src/main.tsx" as="script" />
+  <link rel="modulepreload" href="/src/App.tsx" />
+  <link rel="prefetch" href="https://cdn.velocitynet.work/5DB/PartnerCreators/" />
+  
+  <!-- DNS prefetch for external resources -->
+  <link rel="dns-prefetch" href="//cdn.velocitynet.work" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FiveM Database",
+    "url": "https://fivemdb.net/",
+    "description": "A searchable database for FiveM resources. Verify compliance with FiveM's Terms of Service and Code of Conduct. Avoid blacklisted content and follow best practices.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FiveM Database",
+      "url": "https://fivemdb.net/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  
+  <!-- Performance optimizations -->
+  <script>
+    // Preload critical resources
+    const preloadCritical = () => {
+      const criticalImages = [
+        'https://cdn.velocitynet.work/Logos/5DBv3.1.png'
+      ];
+      
+      criticalImages.forEach(src => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = src;
+        document.head.appendChild(link);
+      });
+    };
+    
+    // Register service worker for caching
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => console.log('SW registered'))
+          .catch(error => console.log('SW registration failed'));
+      });
+    }
+    
+    // Initialize performance optimizations
+    preloadCritical();
+  </script>
+</body>
+</html>

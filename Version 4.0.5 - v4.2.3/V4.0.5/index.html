@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FiveM Database - FiveM Resource Compliance & Blacklist Database</title>
+  <meta name="description" content="FiveM Database (5DB) is the trusted database for checking FiveM resources for TOS/COC compliance, blacklisted files, and creator guidance. Ensure your FiveM server tools follow the rules." />
+  <meta name="author" content="FiveM Database" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fivemdb.net/" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="FiveM Database - TOS & COC Compliance Database for FiveM Resources" />
+  <meta property="og:description" content="Check FiveM scripts, mods, and tools for rule violations. Stay compliant with TOS, avoid blacklisted content, and get guidance for ethical FiveM development." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fivemdb.net/" />
+  <meta property="og:image" content="https://cdn.velocitynet.work/5DB/Data/5DBEmbed.png" />
+  <meta property="og:site_name" content="FiveM Database" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@laurelnwk" />
+  <meta name="twitter:title" content="FiveM Database - FiveM Blacklist Checker & Resource Compliance" />
+  <meta name="twitter:description" content="The essential tool for FiveM creators. Check if your resources follow TOS/COC rules, identify blacklisted files, and get best-practice guidance." />
+  <meta name="twitter:image" content="https://cdn.velocitynet.work/5DB/Data/5DBEmbed.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://jjrfxdnjjvmjgfftrndd.supabase.co" />
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/src/main.tsx" as="script" />
+  <link rel="modulepreload" href="/src/App.tsx" />
+  <link rel="prefetch" href="https://cdn.velocitynet.work/5DB/PartnerCreators/" />
+  
+  <!-- DNS prefetch for external resources -->
+  <link rel="dns-prefetch" href="//cdn.velocitynet.work" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FiveM Database",
+    "url": "https://fivemdb.net/",
+    "description": "A searchable database for FiveM resources. Verify compliance with FiveM's Terms of Service and Code of Conduct. Avoid blacklisted content and follow best practices.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FiveM Database",
+      "url": "https://fivemdb.net/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  
+  <!-- Performance optimizations -->
+  <script>
+    // Preload critical resources
+    const preloadCritical = () => {
+      const criticalImages = [
+        'https://cdn.velocitynet.work/Logos/5DBv3.1.png'
+      ];
+      
+      criticalImages.forEach(src => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = src;
+        document.head.appendChild(link);
+      });
+    };
+    
+    // Register service worker for caching
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => console.log('SW registered'))
+          .catch(error => console.log('SW registration failed'));
+      });
+    }
+    
+    // Initialize performance optimizations
+    preloadCritical();
+  </script>
+</body>
+</html>

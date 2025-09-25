@@ -1,0 +1,17 @@
+
+/* Remove background hover effect on bar charts */
+.recharts-bar:hover {
+  background: transparent !important;
+  fill-opacity: 1 !important;
+}
+
+.recharts-bar-rectangle:hover {
+  background: transparent !important;
+  fill-opacity: 1 !important;
+}
+
+/* Ensure bars maintain their original styling on hover */
+.recharts-responsive-container .recharts-bar:hover {
+  filter: none !important;
+  opacity: 1 !important;
+}
